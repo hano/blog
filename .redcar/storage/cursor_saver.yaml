@@ -1,0 +1,23 @@
+--- 
+cursor_positions: 
+  - :path: db/development.sqlite3
+    :cursor_offset: 0
+    :timestamp: 2012-05-11 15:11:37 +02:00
+  - :path: db/test.sqlite3
+    :cursor_offset: 0
+    :timestamp: 2012-05-11 15:11:37 +02:00
+  - :path: db/migrate/20120511130553_create_articles.rb
+    :cursor_offset: 198
+    :timestamp: 2012-05-11 15:25:42 +02:00
+    :selection_offset: 195
+    :block_selection_mode: false
+  - :path: db/schema.rb
+    :cursor_offset: 0
+    :timestamp: 2012-05-11 15:31:57 +02:00
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-05-11 15:03:35 +02:00
+  - :path: app/views/articles/show.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-05-11 15:05:53 +02:00
+files_to_retain: 0

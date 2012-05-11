@@ -1,0 +1,38 @@
+<%= form_for(@article) do |f| %>
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+      <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :author, :class => "Foo" %><br />
+    <%= f.text_field :author %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </div>
+  
+  <% if @article.new_record? %>
+    <p>nur wenn neuer angelegt wurde<p>
+  <% end %>
+  
+  <% if @article.persisted? %>
+    <p>nur wenn ein bestehnder geändert wird<p>
+  <% end %>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
